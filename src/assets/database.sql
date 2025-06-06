@@ -375,7 +375,6 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('addr/port (opt)', 'Bind to source address/port', 'dig -b 10.0.0.1#80', 27, 'input', '-b', NULL, NULL, 'QUERY OPTIONS'), 
 ('Query Class', 'The most commonly used class is IN (Internet), which is the default for most DNS queries. However, there are other classes like CH (Chaos) and HS (Hesiod) which are less used', 'dig -c HS example.com', 27, 'input', '-c', NULL, NULL, 'QUERY OPTIONS'),
 ('Port Number', 'Specifies the port number for the query', 'dig -p 80 example.com', 27, 'input', '-p', NULL, NULL, 'QUERY OPTIONS'),
-('Query Name', 'Specifies the query name for the DNS lookup', 'dig -q example.com', 27, 'input', '-q', NULL, NULL, 'QUERY OPTIONS'),
 ('Query Type', 'Specifies the query type', 'dig -t MX example.com', 27, 'input', '-t', NULL, NULL, 'QUERY OPTIONS'),
 ('Reverse Lookup', 'Set IP address which will be used for reverse lookup', 'dig -x 10.0.0.1', 27, 'input', '-x', NULL, NULL, 'QUERY OPTIONS'),
 ('Display Flags', 'Set or Clear All Display Flags', 'dig +[no]all example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
