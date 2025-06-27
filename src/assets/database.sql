@@ -376,7 +376,7 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Query Class', 'The most commonly used class is IN (Internet), which is the default for most DNS queries. However, there are other classes like CH (Chaos) and HS (Hesiod) which are less used', 'dig -c HS example.com', 27, 'input', '-c', NULL, NULL, 'QUERY OPTIONS'),
 ('Port Number', 'Specifies the port number for the query', 'dig -p 80 example.com', 27, 'input', '-p', NULL, NULL, 'QUERY OPTIONS'),
 ('Query Type', 'Specifies the query type', 'dig -t MX example.com', 27, 'input', '-t', NULL, NULL, 'QUERY OPTIONS'),
-('Reverse Lookup', 'Set IP address which will be used for reverse lookup', 'dig -x 10.0.0.1', 27, 'input', '-x', NULL, NULL, 'QUERY OPTIONS'),
+('Reverse Lookup', 'Prepare the query name to be used for reverse lookup (in-addr.arpa)', 'dig -x 10.0.0.1', 27, 'checkbox', '-x', NULL, NULL, 'QUERY OPTIONS'),
 ('Display Flags', 'Set or Clear All Display Flags', 'dig +[no]all example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
 ('Answer Section', 'Control Display of Answer Section', 'dig +[no]answer example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
 ('Authority Section', 'Control Display of Authority Section', 'dig +[no]authority example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
