@@ -410,7 +410,7 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Subdomains scrapping', 'The maximum number of subdomains that will be scraped from Google (default 15)', 'dnsenum -s 40 example.com', 14, 'input', '-s', NULL, NULL, 'GOOGLE SCRAPPING OPTIONS: SUBDOMAINS'),
 ('Choose the brute force file', 'Read subdomains from this file to perform brute force. (Takes priority over default dns.txt)', 'dnsenum -f subdomains.txt example.com', 14, 'input', '-f', NULL, NULL, 'SUBDOMAIN BRUTE FORCE'), 
 ('Recursion on subdomains', 'Executes a brute force in all discovered subdomains that have an NS record.', NULL, 14, 'checkbox', '-r', NULL, NULL, 'BRUTE FORCE OPTIONS'),
-('Output in XML format (Choose the file)', 'Can be imported in MagicTree (www.gremwell.com).', 'dnsenum -o output.xml example.com', 14, 'input', '-o', NULL, NULL, 'OUTPUT OPTIONS');
+('Output in XML (Enter the file name)', 'Set the output to a file formatted as XML. Can be imported in MagicTree (www.gremwell.com).', 'dnsenum -o output.xml example.com', 14, 'input', '-o', NULL, NULL, 'OUTPUT OPTIONS');
 
 -- --------------------------------------------------------
 
