@@ -399,7 +399,7 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Set --enum switch', 'Shortcut option equivalent to --threads 5 -s 15 -w.',  NULL, 14, 'checkbox', '--enum', NULL, NULL, 'GENERAL OPTIONS'),
 ('Skip reverse lookup', 'Skip the reverse lookup (reverse DNS searc) operations.', NULL, 14, 'checkbox', '--noreverse', NULL, NULL, 'GENERAL OPTIONS'),
 ('No colors','Disable ANSIColor output, i.e., disables output with colored text.', NULL, 14, 'checkbox', '--nocolor', NULL, NULL, 'GENERAL OPTIONS'),
-('Private ips at the end', 'Show and save private ips at the end of the file domain_ips.txt.', NULL, 14, 'checkbox', '--private', NULL, NULL, 'GENERAL OPTIONS'),
+('Private IPs at the end', 'Show and save private IPs at the end of the file domain_ips.txt.', NULL, 14, 'checkbox', '--private', NULL, NULL, 'GENERAL OPTIONS'),
 ('File to save subdomains','Write all valid subdomains to the chosen file.', 'dnsenum --subfile subdomains_obtained.txt example.com', 14, 'input', '--subfile', NULL, NULL, 'GENERAL OPTIONS'),
 ('Timeout setting','The tcp and udp timeout values in seconds. Defines he interval of time in which dnsenum waits from an answer from the DNS server (default: 10s).', 'dnsenum -t 10 example.com', 14, 'input', '-t', NULL, NULL, 'GENERAL OPTIONS'),
 ('Threads setting', 'The number of threads that will perform different queries.', 'dnsenum --threads 5 example.com', 14, 'checkbox', '--threads', NULL, NULL, 'GENERAL OPTIONS'),
