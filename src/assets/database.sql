@@ -404,8 +404,6 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Timeout','The tcp and udp timeout values in seconds. Defines he interval of time in which dnsenum waits from an answer from the DNS server (default: 10s).', 'dnsenum -t 10 example.com', 14, 'input', '-t', NULL, NULL, 'GENERAL OPTIONS'),
 ('Threads', 'The number of threads that will perform different queries.', 'dnsenum --threads 5 example.com', 14, 'checkbox', '--threads', NULL, NULL, 'GENERAL OPTIONS'),
 ('Verbose output', 'Be verbose: show all the progress and all the error messages.', NULL, 14, 'checkbox', '-v', NULL, NULL, 'GENERAL OPTIONS'),
-('Google pages scrapping', 'The number of google search pages to process when scraping names, the default is 5 pages, the -s switch must be specified.', 'dnsenum -p 15 - 20 example.com', 14, 'input', '-p', NULL, NULL, 'GOOGLE SCRAPPING OPTIONS'),
-('Subdomains scrapping', 'The maximum number of subdomains that will be scraped from Google (default 15)', 'dnsenum -s 40 example.com', 14, 'input', '-s', NULL, NULL, 'GOOGLE SCRAPPING OPTIONS: SUBDOMAINS'),
 ('Choose the brute force file', 'Read subdomains from this file to perform brute force. (Takes priority over default dns.txt)', 'dnsenum -f subdomains.txt example.com', 14, 'input', '-f', NULL, NULL, 'BRUTE FORCE OPTIONS'), 
 ('Recursion on subdomains', 'Executes a brute force in all discovered subdomains that have an NS record.', NULL, 14, 'checkbox', '-r', NULL, NULL, 'BRUTE FORCE OPTIONS'),
 ('Output in XML (Enter the file name)', 'Set the output to a file formatted as XML. Can be imported in MagicTree (www.gremwell.com).', 'dnsenum -o output.xml example.com', 14, 'input', '-o', NULL, NULL, 'OUTPUT OPTIONS');
