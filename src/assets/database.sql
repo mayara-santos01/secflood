@@ -389,10 +389,7 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Hide Stats', 'Control Display of Statistics', 'dig +nostats example.com', 27, 'checkbox', '+nostats', NULL, NULL, 'DISPLAY OPTIONS'),
 ('Enable DNSSEC', 'Request DNSSEC records', 'dig +dnssec example.com', 27, 'checkbox', '+dnssec', NULL, NULL, 'QUERY OPTIONS'),
 ('Disable DNSSEC', 'Do not request DNSSEC records', 'dig +nodnssec example.com', 27, 'checkbox', '+nodnssec', NULL, NULL, 'QUERY OPTIONS'),
-('Display TTL', 'Display Time to Live (TTL) in Records', 'dig +[no]ttlid example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
-('Human-Readble TTL', 'Display TTL in Human-Readable Units', 'dig +[no]ttlunits example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
-('Set Query Timeout', NULL, 'dig +timeout=5 example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS'),
-('Per-Record Comments', 'Control Display of Per-Record Comments', 'dig +[no]rrcomments example.com', 27, 'input', NULL, NULL, NULL, 'DISPLAY OPTIONS');
+('Enable Trace', 'Trace delegation down from root', 'dig +trace example.com', 27, 'checkbox', '+trace', NULL, NULL, 'QUERY OPTIONS');
 
 --
 -- Populate data for `commands`: dnsenum
