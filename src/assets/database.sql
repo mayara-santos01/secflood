@@ -389,6 +389,7 @@ INSERT INTO `commands` (`name`, `description`, `examples`, `tool`, `type`, `comm
 ('Hide Stats', 'Control Display of Statistics', 'dig +nostats example.com', 27, 'checkbox', '+nostats', NULL, NULL, 'DISPLAY OPTIONS'),
 ('Enable DNSSEC', 'Request DNSSEC records', 'dig +dnssec example.com', 27, 'checkbox', '+dnssec', NULL, NULL, 'QUERY OPTIONS'),
 ('Disable DNSSEC', 'Do not request DNSSEC records', 'dig +nodnssec example.com', 27, 'checkbox', '+nodnssec', NULL, NULL, 'QUERY OPTIONS'),
+('Short answer', 'Display nothing except short form of answer', 'dig +short example.com', 27, 'checkbox', '+short', NULL, NULL, 'DISPLAY OPTIONS'),
 ('Enable Trace', 'Trace delegation down from root', 'dig +trace example.com', 27, 'checkbox', '+trace', NULL, NULL, 'QUERY OPTIONS');
 
 --
